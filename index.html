@@ -4,20 +4,21 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Factorielle</title>
     <link rel="stylesheet" href="style.css">
-    <title>Document</title>
+    <script src="script.js" defer></script>
 </head>
 <body>
-    <div class="navigation">
-        <div class="menuToggle"></div>
-        <div class="menu"></div>
+    <div class="conteneur" id="conteneur">
+        <h1 class="titre_one">Factorielle d'un nombre</h1>
+        <div class="btn_input">
+            <input type="number" placeholder="Entrez un nombre" class="number" id="number">
+            <button type="submit" class="button" id="button_one">Valider</button>
+        </div>
+        <div class="affiche">
+            <h3>Voici la reponse :</h3>
+            <p class="reponse" id="aff_reponse"></p>
+        </div>
     </div>
-    <script>
-        let menuToggle = document.querySelector('.menuToggle');
-        menuToggle.onclick = function()
-        {
-            menuToggle.classList.toggle('active');
-        }
-    </script>
 </body>
 </html>

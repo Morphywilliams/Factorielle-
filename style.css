@@ -1,59 +1,47 @@
 *{
     padding: 0;
     margin: 0;
-    box-sizing: border-box;
+    text-align: center;
 }
-:root
-{
-    --clr:#20415c;
+.conteneur{
+    background-image: url(background.jpg);
+    height: 300px;
+    width: 250px;
+    margin: 15% 40%;
+    border: solid blue;
+    border-radius: 12px;
 }
-body
-{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-    background-color: #20415c;
+.titre_one{
+    margin: 8%;
+    font-family: monospace;
+    color: rgb(128, 13, 156);
 }
-.navigation
-{
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+h3{
+    font-family: monospace;
+    font-size: 19px;
 }
-.menuToggle
-{
-    position: relative;
-    width: 65px;
-    height: 65px;
-    background: #ff4886;
-    border: 5px solid var(--clr);
-    border-radius: 50%;
+.number, .button{
+    height: 30px;
+    border: none;
+    border-radius: 12px;
+}
+.button{
+    background: none;
+    color: rgb(25, 10, 118);
+}
+.button:hover{
     cursor: pointer;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    z-index: 10;
-    transform: translateY(-30px);
 }
-.menuToggle::before
-{
-    content: '+';
-    position: absolute;
-    font-size: 3em;
-    color: #fff;
-    transition: 1.5s;
+.affiche{
+    margin: 9% 9%;
+    border: solid rgb(27, 99, 117) 2px;
+    height: 70px;
+    width: 200px;
 }
-.menuToggle.active:before
-{
-    transform: rotate(225deg);
-}
-.menu
-{
-    position: absolute;
-    width: 360px;
-    height: 60px;
-    background: #fff;
-    border-radius: 70px;
+p{
+    margin: 9% 16%;
+    background-color: rgb(6, 192, 248);
+    height: 20px;
+    width: 130px;
+    color: rgb(0, 0, 0);
 }
