@@ -1,0 +1,59 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+:root
+{
+    --clr:#20415c;
+}
+body
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #20415c;
+}
+.navigation
+{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.menuToggle
+{
+    position: relative;
+    width: 65px;
+    height: 65px;
+    background: #ff4886;
+    border: 5px solid var(--clr);
+    border-radius: 50%;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 10;
+    transform: translateY(-30px);
+}
+.menuToggle::before
+{
+    content: '+';
+    position: absolute;
+    font-size: 3em;
+    color: #fff;
+    transition: 1.5s;
+}
+.menuToggle.active:before
+{
+    transform: rotate(225deg);
+}
+.menu
+{
+    position: absolute;
+    width: 360px;
+    height: 60px;
+    background: #fff;
+    border-radius: 70px;
+}
